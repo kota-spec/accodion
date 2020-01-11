@@ -1,11 +1,11 @@
-import accordion from './_accordion';
+import Accordion from './_accordion';
 
 (() => {
   window.addEventListener('DOMContentLoaded', () => {
-    console.log('example template');
-    accordion('js-wrap', {
-      speed: 0.2,
+    const accordion = new Accordion('.js-wrap', {
+      speed: 0.4,
       isOnly: true
     });
+    accordion.init();
   });
 })();

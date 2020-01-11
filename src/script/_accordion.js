@@ -72,6 +72,7 @@ export class Accordion {
     });
   }
 
+  // アコーディオンの開閉の処理
   _onAccordion (e) {
     this._current = Number(e.currentTarget.dataset.id);
 
